@@ -18,10 +18,16 @@ let cols = colInput.value
 
 rowInput.addEventListener('change', (e) => {
     rows = e.target.value
+
+    if (rows > 100)
+        rows = 100
 })
 
 colInput.addEventListener('change', (e) => {
     cols = e.target.value
+
+    if (cols > 100)
+        cols = 100
 })
 
 createBtn.addEventListener('click', (e) => {
