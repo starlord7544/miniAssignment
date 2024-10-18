@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Dynamic</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form>
+        <table cellpadding="10px" cellspacing="10px">
+            <tr>
+                <td><label for="rows">Enter number of rows:</label></td>
+                <td><input type="number" id="rows" name="rows" min="1" max="100" value="3"></td>
+            </tr>
+            <tr>
+                <td><label for="cols">Enter number of columns:</label></td>
+                <td><input type="number" id="cols" name="cols" min="1" max="100" value="3"> <br></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="create-btn" value="Create table">
+                </td>
+                <td>
+                    <span>
+                        <img src="./clear.png" alt="clear btn" id="clear-btn">
+                    </span>
+                </td>
+            </tr>
+            <!-- <div class="mini"></div> -->
+        </table>
+        <!-- <span class="close btns">
+            <img src="./close.png" alt="collapse btn" class="btn">
+        </span> -->
+        <!-- <span class="open btns">
+            <img src="./open.png" alt="collapse btn" class="btn">
+        </span> -->
+    </form>
+    <main class="main">
+        <!-- <div class="table-container">
+            <table class="table" cellspacing="5">
+                <tr>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                </tr>
+                <tr>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                </tr>
+                <tr>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                    <td>explorin</td>
+                </tr>
+            </table>
+        </div> -->
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
