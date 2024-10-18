@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --clr-accent: rgb(255, 170, 124);
+    --clr-input: #ffffff;
+}
+::selection {
+    background-color: var(--clr-accent);
+    color: white;
+}
+
+#mob:focus-visible , #password:focus-visible{
+    outline-color:  rgba(255, 170, 124, 0.7);
+    box-shadow: 0 0 2px  rgba(255, 170, 124, 0.7);;
+}
+
+body {
+    background: linear-gradient(135deg, #ffd8a0, #ffb3b3, #ffcce6);
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+form {
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    width: 90vw;
+    background: linear-gradient(135deg, #fff0e8, #ffe0e0, #ffe6f2);
+}
+.username, .mob, .pass ,.button, .mobReqs, .passReqs, .userReqs, .email, .emailReqs{
+    padding: 0px 1vw;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+label {
+    letter-spacing: 0.5px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--clr-input);
+}
+.button input{
+    width: 100px;
+    margin-top: 0%;
+    background-color: var(--clr-accent);
+    border: none;
+    box-shadow: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.mobReqs p, .userReqs p, .emailReqs p{
+    display: none;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+p {
+    font-size: 0.9rem;
+}
+.passReqs p {
+    display: block;
+    padding: 2px;
+    opacity: 0.8;
+}
