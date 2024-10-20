@@ -4,6 +4,7 @@ const main = document.querySelector('main')
 
 // const openBtn = document.getElementById('open-btn')
 // const closeBtn = document.getElementById('close-btn')
+// will implement this later
 
 
 const tableDiv = document.createElement('div')
