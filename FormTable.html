@@ -8,86 +8,103 @@
 </head>
 
 <body>
-    <table border="0" cellspacing="10" cellpadding="5">
-        <thead>
-            <tr>
-                <th colspan="2">Form & Input Tags using Table</th>
-            </tr>
-        </thead>
-        <tbody>
-            <form target="_self" novalidate>
+    <fieldset>
+        <legend>Practice Only :</legend>
+        <table border="0" cellspacing="10" cellpadding="5">
+            <thead>
                 <tr>
-                    <td><label for="full_name">Name :</label></td>
-                    <td><input type="text" placeholder="Enter Your name" autofocus required></td>
+                    <th colspan="2">Form & Input Tags using Table</th>
                 </tr>
-                <tr>
-                    <td><label for="phone_no">Phone number : </label></td>
-                    <td><input type="number" id="phone_no" step="5" required placeholder="eg: +91 6969696969"
-                            autocomplete="name"></td>
-                </tr>
-                <tr>
-                    <td> <label for="email_address">Email : </label></td>
-                    <td><input type="email" id="email_address" required placeholder="example@gmail.com" value=""></td>
-                </tr>
-                <tr>
-                    <td><label for="password_input">Password : </label></td>
-                    <td><input type="password" id="password_input" minlength="5" maxlength="10" value=""
-                            placeholder="5 <= length <= 10"></td>
-                </tr>
-                <tr>
-                    <td><label for="range_input">range : </label></td>
-                    <td><input type="range" id="range_input" value="69" step="0.1"></td>
-                </tr>
-                <tr>
-                    <td><label for="color_input">color : </label></td>
-                    <td><input type="color" id="color_input"></td>
-                </tr>
-                <tr>
-                    <td><label for="file_input">file : </label></td>
-                    <td><input type="file" id="file_input" accept=".jpg, jpeg, .png, .pdf, .heif"></td>
-                </tr>
-                <tr>
-                    <td><label for="date_input">Date : </label></td>
-                    <td><input type="date" id="date_input" value="1969-06-09" min="1969-06-09" max="2069-06-09"></td>
-                </tr>
-                <tr>
-                    <td><label for="check_input">CheckBox : </label></td>
-                    <td>
-                        <input type="checkbox" name="check_input">BOX1
-                        <input type="checkbox" name="check_input">BOX2
-                        <input type="checkbox" name="check_input">BOX3
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="radio_input">Radio : </label></td>
-                    <td>
-                        <input type="radio" name="radio_input"> DEV<br>
-                        <input type="radio" name="radio_input"> DSA<br>
-                        <input type="radio" name="radio_input"> DATA
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="select_courses">Select Options :</label></td>
-                    <td>
-                        <select id="select_courses">
-                            <optgroup label="DEV">
-                                <option>Web-Dev</option>
-                                <option>Mobile-Dev</option>
-                            </optgroup>
-                            <optgroup label="DS">
-                                <option>Machine Learning</option>
-                                <option>Data Analysis</option>
-                            </optgroup>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Submit"></td>
-                    <td><input type="reset" value="Reset"></td>
-                </tr>
-            </form>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <form target="_self" novalidate>
+                    <tr>
+                        <td><label for="full_name">Name :</label></td>
+                        <td><input type="text" placeholder="Enter Your name" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone_no">Phone number : </label></td>
+                        <td><input type="number" id="phone_no" step="5" required placeholder="eg: +91 6969696969"
+                                autocomplete="name"></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email_address">Email : </label></td>
+                        <td><input type="email" id="email_address" required placeholder="example@gmail.com" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password_input">Password : </label></td>
+                        <td><input type="password" id="password_input" minlength="5" maxlength="10" value=""
+                                placeholder="5 <= length <= 10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="range_input">range : </label></td>
+                        <td><input type="range" id="range_input" value="69" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color_input">color : </label></td>
+                        <td><input type="color" id="color_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file_input">file : </label></td>
+                        <td><input type="file" id="file_input" accept=".jpg, jpeg, .png, .pdf, .heif"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date_input">Date : </label></td>
+                        <td><input type="date" id="date_input" value="1969-06-09" min="1969-06-09" max="2069-06-09">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="check_input">CheckBox : </label></td>
+                        <td>
+                            <input type="checkbox" name="check_input">BOX1
+                            <input type="checkbox" name="check_input">BOX2
+                            <input type="checkbox" name="check_input">BOX3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="radio_input">Radio : </label></td>
+                        <td>
+                            <input type="radio" name="radio_input"> DEV<br>
+                            <input type="radio" name="radio_input"> DSA<br>
+                            <input type="radio" name="radio_input"> DATA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="select_courses">Select Options :</label></td>
+                        <td>
+                            <select id="select_courses">
+                                <optgroup label="DEV">
+                                    <option>Web-Dev</option>
+                                    <option>Mobile-Dev</option>
+                                </optgroup>
+                                <optgroup label="DS">
+                                    <option>Machine Learning</option>
+                                    <option>Data Analysis</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dataList">DataList : </label></td>
+                        <td>
+                            <input list="options" name="choice">
+                            <datalist id="options">
+                                <option value="Web">
+                                <option value="App">
+                                <option value="System">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </fieldset>
+
 </body>
 
 </html>
