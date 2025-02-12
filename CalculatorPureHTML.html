@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalciHTML</title>
+</head>
+
+<body bgcolor="pink">
+    <form oninput="result.value =eval(parseInt(num1.value) + operator.value + parseInt(num2.value))">
+        <table border="" cellpadding="5px" cellspacing="10px" align="center">
+            <thead align="center">
+                <tr>
+                    <th>
+                        <h1>Calcify</h1>
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td colspan="4">
+                        <input type="number" id="num1" placeholder="Input A">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="num2" placeholder="Input B">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" cellpadding="9px" cellspacing="8px" align="center">
+            <tbody align="center">
+                <tr>
+                    <td>
+                        <input type="radio" name="operator" id="plus" value="+" checked>
+                        <br>
+                        <label for="plus">
+                            <strong> &plus; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="minus" value="-"> <br>
+                        <label for="minus">
+                            <strong> &minus; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="multiply" value="*"> <br>
+                        <label for="multiply">
+                            <strong> &times; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="divide" value="/"> <br>
+                        <label for="divide">
+                            <strong> &divide;</strong>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1"> &equals; </td>
+                    <td colspan="3">
+                        <output name="result" id="result" for="num1 num2"></output>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
