@@ -8,19 +8,19 @@
 </head>
 
 <body bgcolor="pink">
-    <form oninput="result.value =eval(parseInt(num1.value) + operator.value + parseInt(num2.value))">
-        <table border="" cellpadding="6px" cellspacing="10px" align="center">
+    <form
+        oninput="result.value = (parseFloat(eval(parseInt(num1.value) + operator.value + parseInt(num2.value)).toFixed(3)).toString().slice(0,10))">
+        <table border="1" cellpadding="6px" cellspacing="10px" align="center">
             <thead align="center">
                 <tr>
                     <th>
                         <h1>Calcify</h1>
                     </th>
                 </tr>
-
             </thead>
             <tbody align="center">
                 <tr>
-                    <td colspan="4">
+                    <td>
                         <input type="number" id="num1" placeholder="Input A">
                     </td>
                 </tr>
