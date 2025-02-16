@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalciHTML</title>
+    <style>
+        form {
+            transform: scale(1.5);
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form
+        oninput="result.value = (parseFloat(eval(parseInt(num1.value) + operator.value + parseInt(num2.value)).toFixed(3)).toString().slice(0,10))">
+        <table border="1" cellpadding="6px" cellspacing="10px" align="center" bgcolor="antiquewhite">
+            <thead align="center">
+                <tr>
+                    <th>
+                        <em>
+                            <h1>Calcify</h1>
+                        </em>
+                    </th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>
+                        <input type="number" id="num1" placeholder="Input A">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="num2" placeholder="Input B">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" cellpadding="9px" cellspacing="8px" align="center" bgcolor="antiquewhite">
+            <tbody align="center">
+                <tr>
+                    <td>
+                        <input type="radio" name="operator" id="plus" value="+" checked> <br>
+                        <label for="plus">
+                            <strong> &plus; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="minus" value="-"> <br>
+                        <label for="minus">
+                            <strong> &minus; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="multiply" value="*"> <br>
+                        <label for="multiply">
+                            <strong> &times; </strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="operator" id="divide" value="/"> <br>
+                        <label for="divide">
+                            <strong> &divide;</strong>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1"> &equals; </td>
+                    <td colspan="3">
+                        <output name="result" id="result" for="num1 num2"></output>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+<!-- <body bgcolor="lightgrey">
+    <form oninput="result.value = (parseFloat(eval(parseInt(num1.value) + operator.value + parseInt(num2.value)).toFixed(3)).toString().slice(0,10))">
+        <fieldset>
+            <legend><h2>Calcify</h2></legend>
+            
+            <fieldset>
+                <legend>Inputs</legend>
+                <input type="number" id="num1" placeholder="Input A"> <br><br>
+                <input type="number" id="num2" placeholder="Input B">
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Operations</legend>
+                <label for="plus"><strong> &plus; </strong></label>
+                <input type="radio" name="operator" id="plus" value="+" checked> <br>
+                
+                <label for="minus"><strong> &minus; </strong></label>
+                <input type="radio" name="operator" id="minus" value="-"> <br>
+                
+                <label for="multiply"><strong> &times; </strong></label>
+                <input type="radio" name="operator" id="multiply" value="*"> <br>
+                
+                <label for="divide"><strong> &divide;</strong></label>
+                <input type="radio" name="operator" id="divide" value="/"> <br>
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Output</legend>
+                <strong>Result: </strong><output name="result" id="result" for="num1 num2"></output>
+            </fieldset>
+        </fieldset>
+    </form>
+</body> -->
+
+</html>
