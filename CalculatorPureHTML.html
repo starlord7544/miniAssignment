@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalciHTML</title>
+    <style>
+        form {
+            transform: scale(1.5);
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body>
     <form
         oninput="result.value = (parseFloat(eval(parseInt(num1.value) + operator.value + parseInt(num2.value)).toFixed(3)).toString().slice(0,10))">
-        <table border="1" cellpadding="6px" cellspacing="10px" align="center" bgcolor="antiquewhite">
+        <table border="1" cellpadding="6px" cellspacing="10px" align="center" bgcolor="antiquewhite" width="200">
             <thead align="center">
                 <tr>
                     <th>
@@ -33,7 +39,7 @@
                 </tr>
             </tbody>
         </table>
-        <table border="1" cellpadding="9px" cellspacing="8px" align="center" bgcolor="antiquewhite">
+        <table border="1" cellpadding="9px" cellspacing="8px" align="center" bgcolor="antiquewhite" width="200">
             <tbody align="center">
                 <tr>
                     <td>
