@@ -350,6 +350,7 @@ body {
     margin: 5px;
     display: flex;
     margin: 10px;
+    max-width: 900px;
     /* align-items: center; */
 }
 
@@ -410,6 +411,7 @@ body {
 .dateLine {
     display: flex;
     width: 100%;
+    max-width: 975px;
     /* border: 1px solid; */
     align-items: center;
     justify-content: center;
