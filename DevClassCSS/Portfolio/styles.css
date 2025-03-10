@@ -227,13 +227,12 @@ body {
 
 
 /* Video Progress Section */
-.video-progress {
-    padding: 50px 80px;
+.video-section {
+    padding: 50px 90px;
     padding-top: 30px;
-    padding-left: 90px;
 }
 
-#video-head-1 {
+.video-title {
     font-size: 2.7rem;
     color: #172937;
     font-weight: 700;
@@ -241,42 +240,43 @@ body {
     text-align: center;
 }
 
-#video-head-1 span {
+.video-title span {
     color: #F37021;
 }
 
-#video-head-2 {
+.video-description {
     font-size: 1.8rem;
     color: #1f1f1f;
     letter-spacing: 0.4px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     text-align: center;
-    margin: 10px 0 80px 0;
 }
 
-.video-progress button {
+.linkedin-button {
     background-color: #F37021;
     color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.4px;
-    margin: 0 auto;
+    margin: 0 auto 65px;
     display: block;
-    margin-bottom: 65px;
     width: 330px;
     height: 65px;
     border-radius: 8px;
-
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
-.videos-container {
+.linkedin-button:hover {
+    background-color: #d95d1d;
+}
+
+.video-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    /* background-color:#F2F2F2 ; */
 }
 
 .video-card {
@@ -288,7 +288,7 @@ body {
     margin: 0 15px;
 }
 
-.video {
+.video-preview {
     width: 100%;
     height: 240px;
     border-top-left-radius: 20px;
@@ -299,37 +299,41 @@ body {
     align-items: center;
 }
 
-.video p {
-    margin: 0 auto;
+.video-preview p {
     font-size: 20px;
     font-weight: 400;
     color: #F37021;
 }
 
-.about-video {
+.video-details {
     padding: 15px 30px;
-    height: 210px;
 }
 
-.about-video p {
+.video-day {
     font-size: 18px;
     font-weight: 500;
     color: #000000B0;
 }
 
-.about-video h2 {
+.video-topic {
     font-size: 26px;
     font-weight: 600;
     color: #000000D9;
     margin: 7px 0;
 }
 
-/* Project Section */
-.projects-section {
-    padding: 50px 80px;
+.video-coach {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000B0;
 }
 
-#projects-head-1 {
+/* Project Section */
+.projects-section {
+    padding: 50px 90px;
+}
+
+.projects-title {
     font-size: 2.7rem;
     color: #172937;
     font-weight: 700;
@@ -337,223 +341,205 @@ body {
     text-align: center;
 }
 
-#projects-head-2 {
-    font-weight: 400;
+.projects-description {
     font-size: 1.8rem;
     color: #1f1f1f;
+    font-weight: 400;
     letter-spacing: 0.4px;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
     text-align: center;
-    margin: 10px 0 65px 0;
 }
 
 .projects-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    border-bottom: 30px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project-card {
     width: 430px;
-    height: 550px;
+    height: auto;
     background-color: #FDFDFD;
     border-radius: 20px;
     box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
-    margin: 0 15px;
-    border-bottom: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.4);
 }
 
 .project-card img {
     width: 100%;
     height: 265px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
 }
 
-.about-project {
-    padding: 10px 30px;
-    height: 200px;
+.project-details {
+    padding: 20px 30px;
 }
 
-.about-project h2 {
-    font-size: 25px;
+.project-name {
     font-size: 1.6rem;
     font-weight: 700;
     color: #FF8153;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 
-.about-project p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 5px;
-}
-
-.about-project .about-head {
+.project-subtitle {
     font-size: 20px;
     font-weight: 500;
     color: #000;
-    margin: 15px 0;
+    margin-bottom: 10px;
 }
 
-.about-project .project-desc {
+.project-description {
     font-size: 18px;
     font-weight: 400;
     color: #000000B0;
-    margin: 15px 0;
-
+    line-height: 1.5;
 }
+
 
 /* Education Section */
-
 .education-section {
-    padding: 50px 67px;
+    padding: 50px 90px;
     margin-bottom: 50px;
-    padding-left: 90px;
 }
 
-.education-head-1 {
-    font-size: 43px;
+.education-title {
     font-size: 2.7rem;
     color: #172937;
     font-weight: 700;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.education-head-2 {
-    font-size: 28px;
-    font-size: 1.83rem;
+.education-subtitle {
+    font-size: 1.8rem;
     color: #1f1f1f;
-    letter-spacing: 0.4px;
     font-weight: 400;
-    margin-bottom: 20px;
     text-align: center;
-    margin: 10px 0 65px 0;
+    margin-bottom: 65px;
 }
 
 .education-card-container {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
-    gap: 50px;
-    /* width: 94vw; */
+    justify-content: center;
+    gap: 30px;
 }
 
 .education-card {
-    width: 655px;
-    /* border: 2px solid red; */
-    height: 180px;
+    width: 600px;
     background-color: #FDFDFD;
     border-radius: 20px;
     box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
-    /* margin: 0 23.5px; */
-    /* margin-bottom: 20px; */
-    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px -6px rgba(0, 0, 0, 0.4);
 }
 
 .education-content {
-    padding: 10px 30px;
-    padding-top: 0px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    /* border: 1px solid; */
-    padding-bottom: 40px;
-    /* height: 200px; */
+    padding-left: 20px;
 }
 
-.education-content h2 {
-    font-size: 25px;
-    font-size: 1.7rem;
-    /* border: 1px solid; */
+.education-institution {
+    font-size: 1.6rem;
     font-weight: 700;
+    color: #172937;
+    margin-bottom: 5px;
 }
 
-.education-content p {
-    font-size: 16px;
-    /* border: 1px solid; */
+.education-year {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #F37021;
+    margin-bottom: 5px;
+}
+
+.education-degree {
+    font-size: 1.2rem;
     font-weight: 400;
     color: #000000;
 }
 
-.education-content .year {
-    font-size: 20px;
-    /* border: 1px solid; */
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #F37021;
-    padding-bottom: 10px;
-    /* margin: 7px 0; */
-}
-
 .education-card img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 32px;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
+
 
 /* Contacts */
 
 .contact-section {
-    padding: 50px 80px;
+    padding: 80px 50px;
+    padding: 90px;
     background-color: #172937;
-    padding-left: 120px;
-    padding-top: 80px;
-    height: 435px;
+    text-align: center;
 }
 
-.contact-head-1 {
-    font-size: 3.1rem;
+.contact-title {
+    font-size: 3rem;
     font-weight: 700;
-    text-align: center;
     color: #F37021;
+    margin-bottom: 20px;
 }
 
-.contact-head-2 {
-    font-size: 28px;
+.contact-subtitle {
     font-size: 1.8rem;
-    letter-spacing: 0;
     font-weight: 400;
-    text-align: center;
-    margin: 30px 0 50px 0px;
     color: #ffffff;
+    margin-bottom: 50px;
 }
 
 .contacts-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 60px;
+    gap: 20px;
 }
 
 .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
     border: 1px solid #F37021;
     border-radius: 10px;
-    padding: 20px 25px;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.contact p {
-    font-size: 22px;
-    font-weight: 400;
-    color: white;
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 166, 0, 0.3);
 }
 
 .contact img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+}
+
+.contact p {
+    color: white;
 }
