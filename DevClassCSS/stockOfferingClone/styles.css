@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -10,13 +11,15 @@ body {
     background-color: #dbecfe;
     background-repeat: no-repeat;
     background-size: cover;
+    scrollbar-width: none;
 }
 
 #hero {
     height: 100vh;
     width: 100vw;
     display: flex;
-    /* overflow: scroll; */
+    /* overflow: scroll;
+    scrollbar-width: 2px; */
 }
 
 main {
@@ -56,7 +59,8 @@ main {
     bottom: -5px;
 }
 
-.navbar span {
+.navbar span,
+.staking-activation span {
     font-weight: 500;
     font-size: 1.2rem;
     color: gray;
@@ -165,14 +169,11 @@ aside .navbar {
     width: 305px;
     background-color: white;
     border-radius: 10px;
-    /* border: 1px solid gray; */
 }
 
 .top-content .top-right {
     width: calc(100% - 305px - 30px);
-    /* width: 100%; */
-    /* width: 700px; */
-    justify-content: space-between;
+    justify-content: space-center;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -183,5 +184,60 @@ aside .navbar {
     background-color: white;
     height: 46%;
     width: 350px;
+    border-radius: 10px;
+}
+
+.rewards-query {
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-right: 0px;
+    height: 250px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.query-container {
+    width: 100%;
+    background-color: white;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.staking-rewards {
+    margin-top: 35px;
+    height: 290px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.rewards-container {
+    width: 100%;
+    background-color: white;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.staking-activation {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 20px 0 0 20px;
+    height: 550px;
+
+}
+
+.activation-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.activation-container {
+    width: 100%;
+    background-color: white;
+    height: calc(100% - 50px);
     border-radius: 10px;
 }
