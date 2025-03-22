@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staking Offering Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .top-content {
+            width: 100%;
+            display: flex;
+            height: 400px;
+            /* border: 2px solid red; */
+            gap: 40px;
+            justify-content: center;
+        }
+        .top-content div {
+            background-color: white;
+            height: 100%;
+            width: 30%;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <main>
+            <header class="navbar">
+                <p>Staking offerings</p>
+                <div class="staking-page-nav">
+                    <p>Locked Staking</p>
+                    <hr size="4" color="gray">
+                    <p>Defi Staking</p>
+                </div>
+                <span>Active <img src="./assets/dropdown-arrow.svg" alt="dropdown"></span>
+            </header>
+            <div class="top-content">
+                <div class="left"></div>
+                <div class="mid"></div>
+                <div class="right"></div>
+            </div>
+        </main>
+        <aside>
+            <header class="navbar">
+                <p>Staking wallet</p>
+                <span>USDT <img src="./assets/dropdown-arrow.svg" alt="dropdown"></span>
+            </header>
+            <div class="balance-card">
+                <div class="top">
+                    <p>AVBL. BALANCE</p>
+                    <strong>68,750,904.45 USDT</strong>
+                </div>
+                <div class="mid-container">
+                    <div class="middle">
+                        <p>Staked</p>
+                        <strong>2,32,64.8967 USDT</strong>
+                    </div>
+                    <div class="middle">
+                        <p>Reward Claimed</p>
+                        <strong>1,32,64.8967 USDT</strong>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="top-up-btn">Top Up wallet</button>
+                    <button class="transfer-btn">Transfer</button>
+                </div>
+            </div>
+        </aside>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(./assets/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* overflow: scroll; */
+}
+
+main {
+    /* border: 3px solid red; */
+    height: 100%;
+    width: calc(100% - 580px);
+    padding: 20px;
+}
+
+.navbar {
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 20px 0 20px 20px;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.navbar div {
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+    margin-right: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+    position: relative;
+    /* text-decoration: underline; */
+}
+
+.navbar div hr {
+    position: absolute;
+    border-radius: 10px;
+    width: 132px;
+    bottom: -5px;
+}
+
+.navbar span {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: gray;
+    display: flex;
+    gap: 10px;
+}
+
+span img {
+    height: 25px;
+}
+
+aside {
+    height: 100%;
+    width: 580px;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+aside .navbar {
+    padding: 20px 20px 20px 0;
+}
+
+.balance-card {
+    height: 385px;
+    width: 100%;
+    background-color: #0b99ff;
+    border-radius: 15px;
+    margin-top: 10px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.balance-card p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+.balance-card .top {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.balance-card .top strong {
+    font-size: 2rem;
+}
+
+.mid-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* padding-bottom: 30px; */
+}
+
+.mid-container p {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.mid-container strong {
+    font-size: 1.3rem;
+}
+
+.balance-card .buttons {
+    display: flex;
+    width: 100%;
+}
+
+.balance-card button {
+    padding: 15px 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+.balance-card button.transfer-btn {
+    background: #0b99ff;
+    color: white;
+    border: 2px solid white;
+}
