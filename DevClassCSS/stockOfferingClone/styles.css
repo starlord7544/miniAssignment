@@ -200,6 +200,10 @@ aside .navbar {
     border-radius: 10px;
 }
 
+.heading {
+    margin-bottom: 20px;
+}
+
 .rewards-query {
     width: 100%;
     margin: 30px 0;
@@ -209,18 +213,78 @@ aside .navbar {
     height: 250px;
 }
 
-.heading {
-    margin-bottom: 20px;
-}
 
 .query-container {
     width: 100%;
     background-color: white;
     height: 140px;
     border-radius: 10px;
+    display: flex;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    gap: 30px;
 }
 
+.query-content {
+    height: 100%;
+    /* border: 1px solid red;    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
 
+.query-content .query-val {
+    background-color: #c4c3c35f;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 225px;
+}
+
+.staking-rewards {
+    margin-top: 35px;
+    height: 290px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.rewards-container {
+    width: 100%;
+    background-color: white;
+    height: 210px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    font-size: 1.1rem;
+}
+
+.rewards-container .reward-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.reward-content p,
+.query-content p {
+    color: gray;
+    font-weight: 500;
+}
+
+.reward-content span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0b99ff;
+}
+
+.reward-content .reward-inner p {
+    margin-bottom: 7px;
+}
+
+.claim {
+    color: #0b99ff;
+}
 
 .staking-activation {
     width: 100%;
@@ -273,7 +337,7 @@ aside .navbar {
 }
 
 .stats-container img {
-    width:  100%;
+    width: 100%;
     border-radius: 10px;
     height: 100%;
     object-fit: stretch;
