@@ -6,7 +6,8 @@
 
 body {
     font-family: sans-serif;
-    background-image: url(./assets/bg1.png);
+    /* background-image: url(./assets/bg1.png); */
+    background-color: #dbecfe;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -146,4 +147,41 @@ aside .navbar {
     background: #0b99ff;
     color: white;
     border: 2px solid white;
+}
+
+.top-content {
+    width: 100%;
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-right: 0px;
+    gap: 20px;
+}
+
+.top-content .top-left {
+    height: 100%;
+    width: 305px;
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+}
+
+.top-content .top-right {
+    width: calc(100% - 305px - 30px);
+    /* width: 100%; */
+    /* width: 700px; */
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.top-content .card {
+    background-color: white;
+    height: 46%;
+    width: 350px;
+    border-radius: 10px;
 }
