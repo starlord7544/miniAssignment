@@ -7,7 +7,45 @@
     <title>Staking Offering Clone</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
+        .staking-rewards {
+            margin-top: 35px;
+            height: 290px;
+            width: 100%;
+            padding: 20px 0;
+        }
 
+        .rewards-container {
+            width: 100%;
+            background-color: white;
+            height: 210px;
+            border-radius: 10px;
+            padding: 40px 30px;
+            font-size: 1.1rem;
+        }
+
+        .rewards-container .reward-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .reward-content p {
+            color: gray;
+            font-weight: 500;
+        }
+
+        .reward-content span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .reward-content .reward-inner p {
+            margin-bottom: 7px;
+        }
+        .claim {
+            color: #0b99ff;
+        }
     </style>
 </head>
 
@@ -73,6 +111,21 @@
             <div class="staking-rewards">
                 <h2 class="heading">Staking Reward</h2>
                 <div class="rewards-container">
+                    <div class="reward-content">
+                        <p>Staked Asset</p>
+                        <span>QNT <img src="./assets/dropdown-arrow.svg" alt="dropdown"></span>
+                    </div>
+                    <div class="reward-content">
+                        <div class="reward-inner">
+                            <p>Rewards to be clamed</p>
+                            <strong>12.15 ONT</strong>
+                        </div>
+                        <div class="reward-inner">
+                            <p>Next Claim Available In</p>
+                            <strong>3D : 4H : 15 Min</strong>
+                        </div>
+                    </div>
+                    <div class="claim">Claim Rewards</div>
                 </div>
             </div>
             <div class="stats">

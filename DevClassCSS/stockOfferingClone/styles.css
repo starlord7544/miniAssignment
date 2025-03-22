@@ -28,14 +28,12 @@ body {
 }
 
 main {
-    /* border: 3px solid red; */
     height: 100%;
     width: calc(100% - 580px);
     padding: 20px;
 }
 
 .navbar {
-    /* border: 2px solid purple; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,19 +220,7 @@ aside .navbar {
     border-radius: 10px;
 }
 
-.staking-rewards {
-    margin-top: 35px;
-    height: 290px;
-    width: 100%;
-    padding: 20px 0;
-}
 
-.rewards-container {
-    width: 100%;
-    background-color: white;
-    height: 210px;
-    border-radius: 10px;
-}
 
 .staking-activation {
     width: 100%;
