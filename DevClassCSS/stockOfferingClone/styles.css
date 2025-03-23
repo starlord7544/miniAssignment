@@ -7,7 +7,7 @@
 
 body {
     font-family: sans-serif;
-    /* background-image: url(./assets/bg1.png); */
+    /* background-image: url(./assets/bg2.png); */
     background-color: #dbecfe;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,6 +80,7 @@ span img {
 aside {
     height: 100%;
     width: 580px;
+    min-width: 550px;
     padding: 20px;
     padding-right: 40px;
 }
