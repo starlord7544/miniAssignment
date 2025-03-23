@@ -180,7 +180,7 @@ aside .navbar {
 }
 
 .top-content .top-right {
-    width: calc(100% - 305px - 30px);
+    min-width: calc(100% - 305px - 30px);
     justify-content: space-center;
     height: 100%;
     display: flex;
@@ -191,7 +191,8 @@ aside .navbar {
 .top-content .card {
     background-color: white;
     height: 46%;
-    width: 350px;
+    /* width: 47.99%; */
+    width: 47.96%;
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -226,7 +227,9 @@ aside .navbar {
     align-items: flex-end;
 }
 
-.card p, .top-card p, .top-left p {
+.card p,
+.top-card p,
+.top-left p {
     color: gray;
 }
 
@@ -267,7 +270,8 @@ aside .navbar {
 
 .top-content .top-left {
     height: 100%;
-    width: 305px;
+    /* width: 305px; */
+    width: 48%;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -322,6 +326,7 @@ aside .navbar {
     height: 140px;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     padding: 20px 40px;
     font-size: 1.1rem;
     gap: 30px;
@@ -382,7 +387,9 @@ aside .navbar {
 }
 
 .reward-content p,
-.query-content p {
+.query-content p,
+.info-left .info-card p,
+.info-right p {
     color: gray;
     font-weight: 500;
 }
@@ -420,6 +427,170 @@ aside .navbar {
     background-color: white;
     height: calc(100% - 70px);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+
+.activation-info {
+    /* border: 1px solid red; */
+    height: 350px;
+    /* padding: 15px; */
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.activation-btns {
+    /* border: 1px solid blue; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activation-btns p {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    color: gray;
+}
+
+.activation-btns img {
+    width: 35px;
+    height: 35px;
+}
+
+.activation-btns button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.65);
+    background-color: transparent;
+    color: gray;
+    font-size: 1.15rem;
+}
+
+.activation-btns button:last-child {
+    padding: 10px 33px;
+    border-radius: 5px;
+    background-color: #0b99ff;
+    color: white;
+    border: 2px solid #0b99ff;
+}
+
+.activation-container .info-left {
+    height: 100%;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 18px;
+}
+
+.info-left .info-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    padding-right: 15px;
+}
+
+.info-left .info-card .info-select {
+    background-color: rgba(187, 187, 187, 0.2);
+    height: 40px;
+    width: 220px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.info-card .info-select img {
+    width: 20px;
+}
+
+.info-select div:first-child {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-select div:first-child img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.info-right-bottom {
+    height: 280px;
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-right-bottom div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 10px 0 10px 14px;
+    letter-spacing: 1.05px;
+}
+
+.info-right-top {
+    /* height: calc(100% - 280px); */
+    display: flex;
+    flex-grow: 1;
+    padding-left: 14px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-right-top div strong {
+    font-size: 1.4rem;
+}
+
+.info-right-top div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #c4c3c35f;
+    background-color: rgba(187, 187, 187, 0.2);
+    margin-top: 5px;
+}
+
+.info-right-top img {
+    width: 25px;
+    height: 25px;
+
 }
 
 .stats {
