@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            background-color: #212121;
+            height: 350px;
+            width: 100%;
+        }
+
+        footer .top {
+            height: 285px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        footer .top hr {
+            height: 200px;
+        }
+
+        footer .top .left {
+            height: 100%;
+            width: calc(100% - 620px + 50px);
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 25px;
+        }
+
+        .footer_left_content {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            min-width: 230px;
+        }
+
+        .footer_left_content a {
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .footer_left_content p,
+        .footer_right_content h4 {
+            color: #878787;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        footer .top .right {
+            height: 100%;
+            width: 620px;
+            display: flex;
+            padding-left: 25px;
+            gap: 10px;
+        }
+
+        .footer_right_content {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            min-width: 270px;
+            font-size: 0.75rem;
+        }
+
+        footer .bottom {
+            height: 65px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+        }
+
+        .social_text {
+            margin: 20px 0 10px 0;
+        }
+        .social_icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 190px;
+            border: 1px solid;
+        }
+        </style>
+</head>
+
+<body>
+    <footer>
+        <div class="top">
+            <div class="left">
+                <div class="footer_left_content">
+                    <p>ABOUT</p>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                    <a>Careers</a>
+                    <a>Flipkart Stories</a>
+                    <a>Press</a>
+                    <a>Corporate Information</a>
+                </div>
+
+                <div class="footer_left_content">
+                    <p>GROUP COMPANIES</p>
+                    <a>Myntra</a>
+                    <a>Shopsy</a>
+                    <a>Cleartrip</a>
+                </div>
+
+                <div class="footer_left_content">
+                    <p>HELP</p>
+                    <a>Payments</a>
+                    <a>Shippings</a>
+                    <a>Cancellations &amp; Returns</a>
+                    <a>FAQ</a>
+                </div>
+
+                <div class="footer_left_content">
+                    <p>CONSUMER POICLY</p>
+                    <a>Cancellations &amp; Returns</a>
+                    <a>Terms Of Use</a>
+                    <a>Security</a>
+                    <a>Privacy</a>
+                    <a>Sitemap</a>
+                    <a>Grivance Redressal</a>
+                    <a>EPR Compliance</a>
+                </div>
+            </div>
+            <hr color="#454d5e" size="1">
+            <div class="right">
+                <div class="footer_right_content">
+                    <h4>Mail Us:</h4>
+                    <p>Flipkart Internet Private Limited, <br>
+                        Buildings Alyssa, Begonia & <br>
+                        Clove Embassy Tech Village, <br>
+                        Outer Ring Road, Devarabeesanahalli Village, <br>
+                        Bengaluru, 560103, <br>
+                        Karnataka, India
+                    </p>
+                    <div class="social_text">Social:</div>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/flipkart" target="_blank">
+                            <div class="fl_fb fb">
+                                <img src="./assets/flipkart_fb.svg" alt="facebook logo">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/flipkart" target="_blank">
+                            <div class="fl_fb twitter">
+                                <img src="./assets/flipkart_twitter.svg" alt="facebook logo">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/flipkart" target="_blank">
+                            <div class="fl_fb yt">
+                                <img src="./assets/flipkart_yt.svg" alt="facebook logo">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/flipkart" target="_blank">
+                            <div class="fl_fb ig">
+                                <img src="./assets/flipkart_ig.svg" alt="facebook logo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_right_content">
+                    <h4>Registered Office Address:</h4>
+                    <p>Flipkart Internet Private Limited, <br>
+                    Building Alyssa, Begonia &amp; <br>
+                    Clove Embassy Tech Village, <br>
+                    Bengaluru, 560103, <br>
+                    Karnataka, India <br>
+                    CIN : U51109KA2012PTC066107</p>
+                    <p>Telephone:
+                        <a class="ph" href="044-45614700 / 044-67415800">044-45614700 / 044-67415800</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr color="#454d5e" size="1">
+        <div class="bottom">
+            <div class="seller">
+                <img src="./assets/flipkart_sell.svg" alt="footer_img">
+                Become a Seller
+            </div>
+            <div class="seller">
+                <img src="./assets/flipkart_advertise.svg" alt="footer_img">
+                Advertise
+            </div>
+            <div class="seller">
+                <img src="./assets/flipkart_gift_card.svg" alt="footer_img">
+                Gift Cards
+            </div>
+            <div class="seller">
+                <img src="./assets/flipkart_help_center.svg" alt="footer_img">
+                Help Center
+            </div>
+            <div class="sec_last">
+                &copy 2007-2025 Flipkart.com
+            </div>
+            <div class="last_img">
+                <img src="./assets/flipkart_last_image.svg" alt="footer_img">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

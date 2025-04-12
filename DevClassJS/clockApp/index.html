@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="hero">
+        <h1>Clock APP</h1>
+        <div class="clock">
+        </div>
+    </div>
+    <script>
+        const clock = document.querySelector('.clock')
+        const startClock = () => {
+            setInterval(() => {
+                clock.innerHTML = new Date().toLocaleTimeString()
+            }, 1000);
+        }
+        startClock()
+    </script>
+</body>
+
+</html>

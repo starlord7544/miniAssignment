@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .box {
+            height: 50px;
+            background-color: lightskyblue;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            border: 1px solid red;
+        }
+        .box:nth-child(1) { flex-grow: 1; }
+        .box:nth-child(2) { flex-grow: 2; } /* Grows 2x more */
+        .box:nth-child(3) { flex-grow: 1; }
+    </style>
+</head>
+<body>
+    <h2>flex-grow</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .container {
+            display: flex;
+            width: 500px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: lightyellow;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .box:nth-child(1) { flex-shrink: 1; }
+        .box:nth-child(2) { flex-shrink: 3; } /* Shrinks 3x faster */
+    </style>
+</head>
+<body>
+    <h2>flex-shrink</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html> -->

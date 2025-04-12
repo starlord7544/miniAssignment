@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Example</title>
+    <style>
+        body {
+            font-size: 16px;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .box {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .px { width: 100px; border: 2px solid red; }
+        .percent { width: 50%; border: 2px solid blue; }
+        .em { width: 10em; border: 2px solid green; }
+        .rem { width: 10rem; border: 2px solid purple; }
+        .vw { width: 20vw; border: 2px solid orange; }
+        .vh { height: 20vh; border: 2px solid cyan; }
+        .vmin { width: 20vmin; border: 2px solid magenta; }
+        .vmax { width: 20vmax; border: 2px solid brown; }
+    </style>
+</head>
+<body>
+    <h1>CSS Units Example</h1>
+    <div class="container">
+        <div class="px box">100px</div>
+        <div class="percent box">50%</div>
+        <div class="em box">10em</div>
+        <div class="rem box">10rem</div>
+        <div class="vw box">20vw</div>
+        <div class="vh box">20vh</div>
+        <div class="vmin box">20vmin</div>
+        <div class="vmax box">20vmax</div>
+    </div>
+</body>
+</html>

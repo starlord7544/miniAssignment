@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section id="hero">
+        <div class="container right">
+            <div class="card">
+                <h2>Click the button to go the next page</h2>
+                <button id="next-btn">Next &rightarrow;</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const nextBtn = document.getElementById('next-btn')
+        nextBtn.addEventListener('click', () => {
+            window.history.pushState({}, '', 'prev.html')
+            window.location.href = 'prev.html'
+        })
+    </script>
+</body>
+
+</html>

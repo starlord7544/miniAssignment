@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREV</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section id="hero">
+        <div class="container left">
+            <div class="card">
+                <h2>Click the button to go the previous page</h2>
+                <button id="prev-btn">&LeftArrow; Previous</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const prevBtn = document.getElementById('prev-btn')
+        prevBtn.addEventListener('click', () => {
+            window.history.back()
+        })
+    </script>
+</body>
+
+</html>
